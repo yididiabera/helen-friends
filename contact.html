@@ -7,6 +7,7 @@
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:500,600,700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -22,9 +23,11 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html"><span class="flaticon-scissors-in-a-hair-salon-badge"></span>H.F. Beauty</a>
+       <a class="navbar-brand" href="index.html">
+    <img src="images/logo.jpg" alt="H.F. Beauty Salon Logo" class="navbar-logo">
+</a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -33,21 +36,22 @@
 	        <ul class="navbar-nav ml-auto">
 	        	<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
 	        	<li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+				    <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
 	        	<li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
-	        	<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-	          <li class="nav-item active"><a href="contact.html" class="nav-link">Contact</a></li>
+	        	<li class="nav-item active"><a href="about.html" class="nav-link">About</a></li>
+	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
 	        </ul>
 	      </div>
 	    </div>
-	  </nav>
+	  </nav> 
     <!-- END nav -->
 
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/spray-1.jpg');" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg-1.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
-        <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
+        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
           <div class="col-md-9 ftco-animate pb-5 text-center">
-            <h2 class="mb-0 bread">Contact Us</h2>
+            <h2 class="mb-0 bread">Get In Touch</h2>
             <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-round-forward"></i></a></span> <span>Contact Us <i class="ion-ios-arrow-round-forward"></i></span></p>
           </div>
         </div>
@@ -58,114 +62,123 @@
       <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
-            <h2 class="mb-4">Get In Touch</h2>
-            <p>We would love to hear from you. The best way to book an appointment is to give us a call directly. We look forward to welcoming you to our salon.</p>
+            <h2 class="mb-4">We'd Love to Welcome You</h2>
+            <p>The best way to book an appointment is to give us a call directly. Find our hours and location below.</p>
           </div>
         </div>
 
-        <!-- QUICK INFO BAR -->
-        <div class="row d-flex contact-info mb-5">
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-map-marker"></span>
-          		</div>
-          		<h3 class="mb-4">Address</h3>
-	            <p>1074 S Ironton St, Aurora, CO 80012</p>
-	          </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-phone"></span>
-          		</div>
-          		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="tel://7203155051">(720) 315-5051</a></p>
-	          </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-envelope"></span>
-          		</div>
-          		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:info@hfbeauty.com">info@hfbeauty.com</a></p>
-	          </div>
-          </div>
-        </div>
+        <!-- HIGH-CONTRAST CONTACT CARD -->
+        <div class="row">
+            <div class="col-md-10 mx-auto ftco-animate">
+                <div class="contact-card">
+                    <div class="row">
+                        <!-- Left Column: Main Info -->
+                        <div class="col-lg-7">
+                            <a href="tel://7203155051" class="contact-hero-phone">(720)-315-5051</a>
+                            <div class="info-item">
+                                <span class="icon icon-map-marker"></span>
+                                <span>1074 South Ironton St, Aurora, CO 80012</span>
+                            </div>
+                             <div class="info-item">
+                                <span class="icon icon-envelope"></span>
+                                <a href="mailto:info@hfbeauty.com">info@hfbeauty.com</a>
+                            </div>
 
-        <!-- FULL-WIDTH MAP SECTION -->
-        <div class="row block-9">
-          <div class="col-md-12 d-flex ftco-animate" style="height: 500px;">
-            <!-- IMPORTANT: You need to generate your own Google Map embed code -->
-            <!-- 1. Go to Google Maps and search for your address. -->
-            <!-- 2. Click "Share", then "Embed a map". -->
-            <!-- 3. Click "Copy HTML" and paste it here, replacing this iframe. -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3070.338781308362!2d-104.8569888846261!3d39.68411177945731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c62c969371755%3A0x7d2424b9b942a7a5!2s1074%20S%20Ironton%20St%2C%20Aurora%2C%20CO%2080012%2C%20USA!5e0!3m2!1sen!2sca!4v1678886400000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
+                            <!-- ADDED: Social Links Section -->
+                            <div class="mt-4">
+                                <div class="info-item">
+                                    <span class="icon icon-instagram"></span>
+                                    <a href="https://www.instagram.com/helenfriends/" target="_blank">@helenfriends</a>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fa-brands fa-tiktok icon" style="font-size: 20px;"></i>
+                                    <a href="https://www.tiktok.com/@helenhairstylist2" target="_blank">@helenhairstylist2</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Right Column: Business Hours -->
+                        <div class="col-lg-5 mt-5 mt-lg-0">
+                            <h3 class="hours-title">Business Hours</h3>
+                            <ul class="hours-list">
+                                <li><span>Monday - Saturday</span> <span>9:00 AM - 7:00 PM</span></li>
+                                <li><span>Sunday</span> <span>Closed</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
       </div>
     </section>
+    
+    <!-- FULL-WIDTH MAP -->
+    <div class="map-full-width ftco-animate">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3070.338781308362!2d-104.8569888846261!3d39.68411177945731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c62c969371755%3A0x7d2424b9b942a7a5!2s1074%20S%20Ironton%20St%2C%20Aurora%2C%20CO%2080012%2C%20USA!5e0!3m2!1sen!2sca!4v1678886400000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 
    <footer class="ftco-footer ftco-section">
   <div class="container">
     <div class="row mb-5">
-      <!-- Column 1: Brand and Socials -->
-      <div class="col-md-4 footer-brand-col">
+      
+      <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
         <div class="ftco-footer-widget mb-4">
-          <a href="index.html" class="logo">H.F. Beauty</a>
-          <p class="tagline">Experience bespoke hair artistry and transformative treatments in a sanctuary of modern luxury.</p>
-          <div class="footer-social-icons">
-            <a href="#" aria-label="Instagram"><span class="icon-instagram"></span></a>
-            <a href="#" aria-label="TikTok"><span class="icon-twitter"></span></a> <!-- Using twitter icon as placeholder for TikTok -->
-            <a href="#" aria-label="Threads"><span class="icon-facebook"></span></a> <!-- Using facebook icon as placeholder for Threads -->
+          <a href="index.html" class="logo" style="font-size: 32px;">H.F. Beauty</a>
+          <p class="tagline mt-3 mb-4">Where luxury isn’t an option — it’s the standard.</p>
+          <div class="footer-social-list">
+            <a href="https://www.instagram.com/helenfriends/" target="_blank" class="social-handle-item">
+                <span class="icon-instagram"></span> @helenfriends
+            </a>
+           <a href="https://www.tiktok.com/@helenhairstylist2" target="_blank" class="social-handle-item">
+  <i class="fa-brands fa-tiktok"></i> @helenhairstylist2
+</a>
+ 
           </div>
         </div>
       </div>
 
-      <!-- Column 2: Explore Links -->
-      <div class="col-md-4">
-         <div class="ftco-footer-widget mb-4">
+      <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+         <div class="ftco-footer-widget mb-4 pl-lg-5">
           <h2 class="ftco-heading-2">Explore</h2>
           <ul class="list-unstyled">
             <li><a href="index.html" class="py-2 d-block">Home</a></li>
-            <li><a href="pricing.html" class="py-2 d-block">Pricing</a></li>
             <li><a href="about.html" class="py-2 d-block">About Us</a></li>
             <li><a href="services.html" class="py-2 d-block">Services</a></li>
+            <li><a href="pricing.html" class="py-2 d-block">Pricing</a></li>
             <li><a href="gallery.html" class="py-2 d-block">Gallery</a></li>
             <li><a href="contact.html" class="py-2 d-block">Contact</a></li>
           </ul>
         </div>
       </div>
 
-      <!-- Column 3: Contact Information -->
-      <div class="col-md-4">
+      <div class="col-lg-4 col-md-12">
         <div class="ftco-footer-widget mb-4">
-            <h2 class="ftco-heading-2">Have Questions?</h2>
-            <div class="block-23 mb-3">
-              <ul>
-                <li><span class="icon icon-map-marker"></span><span class="text">1074 S Ironton St, Aurora, CO 80012</span></li>
-                <li><a href="tel://7203155051"><span class="icon icon-phone"></span><span class="text">(720) 315-5051</span></a></li>
-                <li><a href="mailto:info@hfbeauty.com"><span class="icon icon-envelope"></span><span class="text">info@hfbeauty.com</span></a></li>
-              </ul>
+            <h2 class="ftco-heading-2 mb-4" style="border-bottom: 2px solid #c19a6b; display: inline-block; padding-bottom: 5px;">Get In Touch</h2>
+            <div class="footer-contact-block">
+              <span class="footer-contact-label">📞 Call To Book</span>
+              <a href="tel://7203155051" class="footer-phone-link">(720)-315-5051</a>
+            </div>
+            <div class="footer-contact-block">
+              <span class="footer-contact-label">📍 Visit Us</span>
+              <p class="footer-address-text">1074 South Ironton St<br>Aurora, CO 80012</p>
             </div>
         </div>
       </div>
     </div>
+
     <div class="row">
       <div class="col-md-12 footer-copyright">
         <p>
-          Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="icon-heart color-danger" aria-hidden="true"></i>
+          Copyright &copy;<script>document.write(new Date().getFullYear());</script> H.F. Beauty </a>
         </p>
       </div>
     </div>
   </div>
 </footer> 
-    
     <!-- loader -->
     <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
-    <!-- The complete, correct script list -->
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -182,5 +195,8 @@
     <script src="js/scrollax.min.js"></script>
     <script src="js/main.js"></script>
     
+    <!-- Remember to add your Font Awesome Kit here if you haven't -->
+    <script src="https://kit.fontawesome.com/YOUR_UNIQUE_CODE.js" crossorigin="anonymous"></script>
+
   </body>
 </html>

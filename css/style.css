@@ -10327,3 +10327,233 @@ textarea.form-control {
   position: relative;
   z-index: 0;
 }
+
+/* ===================================================================
+//  NAVIGATION BAR LOGO STYLES (Add this)
+// =================================================================== */
+
+.navbar-logo {
+  height: 80px; /* Adjust this value to make your logo taller or shorter */
+  width: auto; /* This keeps the logo's proportions correct */
+  transition: all 0.3s ease;
+}
+
+/* Optional: Makes the logo slightly smaller when the user scrolls down */
+.scrolled .navbar-logo {
+  height: 60px; /* A slightly smaller height for the scrolled state */
+}
+
+/* ===================================================================
+//  HIGH-VISIBILITY FOOTER CONTACT STYLES (Add this)
+// =================================================================== */
+
+/* Blocks designed to make info stand out */
+.footer-contact-block {
+  margin-bottom: 30px;
+  border-left: 3px solid rgba(193, 154, 107, 0.3); /* Subtle gold accent line */
+  padding-left: 15px;
+}
+
+/* Small labels like "Call Us" */
+.footer-contact-label {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+/* THE PHONE NUMBER - Big and Gold */
+a.footer-phone-link {
+  color: #c19a6b !important; /* Luxury Gold */
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 36px; /* Very large */
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 1;
+  display: block;
+  transition: all 0.3s ease;
+}
+a.footer-phone-link:hover {
+  color: #fff !important; /* White on hover */
+  transform: scale(1.02);
+}
+
+/* The Address Text */
+.footer-address-text {
+  font-size: 18px;
+  color: #fff; /* Bright white */
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+/* Social Media Handles List */
+.footer-social-list {
+  margin-top: 10px;
+}
+
+.social-handle-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  color: #fff;
+  text-decoration: none !important;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* Footer */
+.social-handle-item span[class^="icon-"],
+.social-handle-item i {
+  color: #c19a6b; /* Gold icons */
+  font-size: 20px; /* Standardized size */
+  margin-right: 15px;
+  background: rgba(255,255,255,0.05);
+  width: 60px;
+  height: 60px;
+  display: flex; /* This is key for centering */
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+/* This targets the hover effect for BOTH icon types */
+.social-handle-item:hover span[class^="icon-"],
+.social-handle-item:hover i {
+  background: #c19a6b;
+  color: #1a1a1a;
+}
+/* Hover effect for socials */
+.social-handle-item:hover {
+  color: #c19a6b;
+  transform: translateX(10px); /* Slides right */
+}
+.social-handle-item:hover span[class^="icon-"] {
+  background: #c19a6b;
+  color: #1a1a1a;
+}
+/* ===================================================================
+//  HIGH-CONTRAST CONTACT PAGE REDESIGN (Add this)
+// =================================================================== */
+.hero-wrap h1,
+.hero-wrap h2 {
+  text-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  letter-spacing: 1px;
+}
+
+/* The main light-colored card container */
+.contact-card {
+  background: linear-gradient(145deg, #f9f6f2, #f1ede8); /* subtle depth */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+.contact-card:hover {
+  transform: translateY(-4px);
+}
+
+
+/* Ensure all text inside the card is dark */
+.contact-card,
+.contact-card h3,
+.contact-card p,
+.contact-card a {
+  color: #2a2a2a; /* Your dark text color */
+}
+
+/* The hero phone number - BIG AND GOLD */
+.contact-card .contact-hero-phone {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 48px; /* Even bigger */
+  font-weight: 700;
+  color: #c19a6b; /* Luxury Gold */
+  text-decoration: none;
+  line-height: 1.1;
+  display: block;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+.contact-card .contact-hero-phone:hover {
+  color: #000;
+}
+
+/* The smaller info lines (address, email) */
+.contact-card .info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 18px;
+  font-weight: 500;
+}
+.contact-card .info-item .icon {
+  font-size: 24px;
+  color: #c19a6b;
+  margin-right: 15px;
+}
+.contact-card .info-item a {
+  text-decoration: none;
+  font-weight: 500;
+}
+.contact-card .info-item a:hover {
+  color: #c19a6b;
+  text-decoration: underline;
+}
+
+/* The business hours section */
+.contact-card .hours-title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #2a2a2a;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #c19a6b;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.contact-card .hours-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.contact-card .hours-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 16px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.contact-card .hours-list li span:first-child {
+  font-weight: 600;
+}
+.contact-card .hours-list li:nth-child(even) {
+  background: rgba(0,0,0,0.02);
+  border-radius: 4px;
+}
+
+
+/* The full-width map container */
+.map-full-width {
+  width: 100%;
+  height: 450px;
+  margin-top: 5rem; /* Space between the card and the map */
+}
+.map-full-width iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.contact-section .heading-section h2 {
+  color: #2a2a2a !important; /* Forces the heading to be dark */
+}
