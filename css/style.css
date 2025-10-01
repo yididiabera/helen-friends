@@ -10303,3 +10303,27 @@ textarea.form-control {
 .footer-copyright a:hover {
   text-decoration: underline;
 }
+
+/* ===================================================================
+//  INNER PAGE BANNER HEIGHT FIX (Add this)
+// =================================================================== */
+
+/* This targets the hero section ONLY on your inner pages (about, contact, etc.) */
+.hero-wrap.hero-wrap-2 {
+  height: 400px !important; /* Sets a fixed, banner-like height */
+  min-height: 400px !important; /* Ensures it doesn't get smaller */
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+/* This adjusts the text container inside the banner */
+.hero-wrap.hero-wrap-2 .slider-text {
+  height: 400px !important; /* Matches the banner height */
+  min-height: 400px !important;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
