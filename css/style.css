@@ -10333,14 +10333,19 @@ textarea.form-control {
 // =================================================================== */
 
 .navbar-logo {
-  height: 80px; /* Adjust this value to make your logo taller or shorter */
-  width: auto; /* This keeps the logo's proportions correct */
+  height: 80px;                 /* Sets the height of the circle */
+  width: 80px;                  /* Sets the width of the circle (must be same as height) */
+  border-radius: 50%;           /* This is the key! Makes it a circle */
+  object-fit: cover;            /* This prevents the image from stretching or squishing */
+  border: 2px solid rgba(193, 154, 107, 0.7); /* Optional: Adds a subtle gold border */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);      /* Optional: Adds a subtle shadow to lift it */
   transition: all 0.3s ease;
 }
 
-/* Optional: Makes the logo slightly smaller when the user scrolls down */
+/* Makes the logo slightly smaller when the user scrolls down */
 .scrolled .navbar-logo {
-  height: 60px; /* A slightly smaller height for the scrolled state */
+  height: 60px;
+  width: 60px;
 }
 
 /* ===================================================================
